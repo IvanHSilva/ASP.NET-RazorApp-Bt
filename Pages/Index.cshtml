@@ -1,0 +1,20 @@
+﻿@page
+@model RazorApp.Pages.IndexModel
+@{
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página ASP.NET Razor</title>
+</head>
+<body>
+    Página ASP.NET Razor
+    <div>
+        @for(int i = 1; i <= 10; i++) {
+            <p>Item @i</p>
+        }
+    </div>
+</body>
+</html>
