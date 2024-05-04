@@ -1,17 +1,21 @@
 ﻿@page
 @model RazorApp.Pages.IndexModel
-@{
-}
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página ASP.NET Razor</title>
 </head>
+
 <body>
     Página ASP.NET Razor
     <div>
+        @* @Html.RenderPartialAsync("Shared/NavMenuPartial") *@
+        <partial name="Shared/NavMenuPartial">
+        <h1>Categorias</h1>
         <table>
             <thead>
                 <tr>
