@@ -1,20 +1,13 @@
 ﻿@page
-@model RazorApp.Pages.IndexModel
+@model IndexModel
+@{
+    Layout = "Shared/_Layout";
+}
 
-<!DOCTYPE html>
-<html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página ASP.NET Razor</title>
-</head>
-
-<body>
-    Página ASP.NET Razor
-    <div>
-        @* @Html.RenderPartialAsync("Shared/NavMenuPartial") *@
-        <partial name="Shared/NavMenuPartial">
+<div>
+    @* @Html.RenderPartialAsync("Shared/NavMenuPartial") *@
+    @* <partial name="Shared/NavMenuPartial"> *@
         <h1>Categorias</h1>
         <table>
             <thead>
@@ -25,8 +18,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var category in Model.Categories)
-                {
+                @foreach (var category in Model.Categories) {
                     <tr>
                         <td>@category.Id</td>
                         <td>@category.Title</td>
@@ -35,6 +27,4 @@
                 }
             </tbody>
         </table>
-    </div>
-</body>
-</html>
+</div>

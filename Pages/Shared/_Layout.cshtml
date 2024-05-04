@@ -1,18 +1,18 @@
-﻿@page
-@model AboutModel
-@{
-}
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
+    <title>Página ASP.NET Razor</title>
 </head>
+
 <body>
-    <div>
+    <header>
         <partial name="Shared/NavMenuPartial">
-        <h1>Sobre Esta Página ASP.NET Razor</h1>
-    </div>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
 </body>
 </html>
