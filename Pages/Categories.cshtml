@@ -1,0 +1,26 @@
+﻿@page
+@model RazorApp.Pages.CategoriesModel
+
+<div>
+    @* @Html.RenderPartialAsync("Shared/NavMenuPartial") *@
+    @* <partial name="Shared/NavMenuPartial"> *@
+    <h1>Categorias</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Titulo</td>
+                <td>Preço</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var category in Model.Categories) {
+                <tr>
+                    <td>@category.Id</td>
+                    <td>@category.Title</td>
+                    <td>@category.Price.ToString("N")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
