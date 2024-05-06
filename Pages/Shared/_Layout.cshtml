@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"] - Página ASP.NET Razor</title>
+    <link href="~/css/Style.css" rel="stylesheet" asp-append-version="true"/>
 </head>
 
 <body>
@@ -14,5 +15,10 @@
     <main>
         @RenderBody()
     </main>
+
+    <br />
+    <footer>2024 - Development by HVC DevTec</footer>
+
+    @RenderSection("scripts", false)
 </body>
 </html>
